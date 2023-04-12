@@ -10,4 +10,4 @@ A Web Application which provides the facility for the users to post and view blo
 
 ### Technical details:
 
-This project is developed using MERN Stack, therefore the front end is implemented in React JS, the leading front-end framework for developing web applications, the back-end is curated using Node JS and Express JS and the database is hosted in MongoDB Atlas.
+This project is developed using MERN Stack, therefore the front end is implemented in React JS, the leading front-end framework for developing web applications, the back-end REST API is created using Node JS and Express JS and the database is hosted in MongoDB Atlas.
