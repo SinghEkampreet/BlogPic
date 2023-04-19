@@ -55,5 +55,9 @@ mongoose
   .connect(
     `mongodb://${process.env.DB_USER}:${process.env.DB_PASSWORD}@ac-gkuyky0-shard-00-00.0ekr6pl.mongodb.net:27017,ac-gkuyky0-shard-00-01.0ekr6pl.mongodb.net:27017,ac-gkuyky0-shard-00-02.0ekr6pl.mongodb.net:27017/${process.env.DB_NAME}?ssl=true&replicaSet=atlas-vsi3ki-shard-0&authSource=admin&retryWrites=true&w=majority`
   )
-  .then(() => app.listen(process.env.PORT || 5000))
+  .then(
+    () =>
+      app.listen(process.env.PORT || 5000) &&
+      console.log(`Server listening at ${process.env.PORT || 5000}`)
+  )
   .catch((err) => console.log(err));
